@@ -1,0 +1,13 @@
+{
+  "search_name": "Network - Port Scan Detection",
+  "search": "index=soc_finance LogType=\"Firewall\" EventDescription=\"Port scan detected\" | bin _time span=15m | stats count as scan_count by Source _time | where scan_count >= 3 | table _time Source scan_count",
+  "enabled": true,
+  "alert_type": "number of results",
+  "alert_comparator": "greater than",
+  "alert_threshold": 0,
+  "alert_action_webhook": true,
+  "action.webhook.param.url": "http://127.0.0.1:5000/alert",
+  "cron_schedule": "*/5 * * * *",
+  "is_scheduled": true,
+  "alert_suppression": "none"
+}

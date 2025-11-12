@@ -1,0 +1,13 @@
+{
+  "search_name": "Critical Events Summary",
+  "search": "index=soc_finance Severity=\"Critical\" | table Timestamp LogType Source EventDescription",
+  "enabled": true,
+  "alert_type": "number of results",
+  "alert_comparator": "greater than",
+  "alert_threshold": 0,
+  "alert_action_webhook": true,
+  "action.webhook.param.url": "http://127.0.0.1:5000/alert",
+  "cron_schedule": "*/5 * * * *",
+  "is_scheduled": true,
+  "alert_suppression": "none"
+}

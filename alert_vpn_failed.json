@@ -1,0 +1,13 @@
+{
+  "search_name": "BF - Failed VPN Logins",
+  "search": "index=soc_finance LogType=\"VPN\" EventDescription=\"Failed VPN login\" | bin _time span=10m | stats count as failed_logins by Source _time | where failed_logins >= 5 | table _time Source failed_logins",
+  "enabled": true,
+  "alert_type": "number of results",
+  "alert_comparator": "greater than",
+  "alert_threshold": 0,
+  "alert_action_webhook": true,
+  "action.webhook.param.url": "http://127.0.0.1:5000/alert",
+  "cron_schedule": "*/5 * * * *",
+  "is_scheduled": true,
+  "alert_suppression": "none"
+}
