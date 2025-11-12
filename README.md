@@ -58,21 +58,27 @@ It combines **Flask**, **Splunk**, and **VirusTotal API** to detect, enrich, and
 <img width="1902" height="833" alt="image" src="https://github.com/user-attachments/assets/80e73dee-86bd-4b4a-9856-7d73b75cfac1" />
 
 | **Critical Event Alerts – Splunk Search** |
+
 <img width="1895" height="667" alt="image" src="https://github.com/user-attachments/assets/0f9f3e7e-7d7a-4bb5-bd4c-3f8772b18d5b" />
 
 | **Malware Detection Alerts – IDS (Snort)** | 
+
 <img width="1905" height="619" alt="image" src="https://github.com/user-attachments/assets/0abfc2ba-09b5-4790-bd50-ce3dbd213bb7" />
 
 | **Port Scan Detection – Firewall Events** | 
+
 <img width="1916" height="614" alt="image" src="https://github.com/user-attachments/assets/854ac54c-efe4-4c59-8f74-365162807848" />
 
 | **VPN Failed Logins – Remote Access Server** | 
+
 <img width="1914" height="632" alt="image" src="https://github.com/user-attachments/assets/12300c20-fe2d-4f17-be76-68b0b31c6bf8" />
 
 | **Environment Keys (.env – VirusTotal + GeoIP)** | 
+
 <img width="1364" height="511" alt="image" src="https://github.com/user-attachments/assets/c0652ebe-a27f-4bba-8d5b-2bf1c7c73d0c" />
 
 | **SOC Dashboard Metrics Summary** | 
+
 <img width="1889" height="576" alt="image" src="https://github.com/user-attachments/assets/42ed063b-bdc1-41fc-a316-529dc99a2dbb" />
 
 
